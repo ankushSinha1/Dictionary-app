@@ -1,8 +1,9 @@
 
 h1 {
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
 }
 h2 {
     font-family: 'Open Sans', sans-serif !important;
@@ -15,9 +16,10 @@ h2 {
     color: #000 !important;
 }
 .btn:hover {
-    background-color: #fff !important;
+    background-color: var(--main-color) !important;
+    filter: brightness(95%);
     border: 1px solid var(--main-color) !important;
-    color: var(--secondary-color) !important;
+    /* color: var(--secondary-color) !important; */
 }
 .suggestions {
     font-style: italic;

@@ -6,7 +6,8 @@
 }
 
 body {
-  background: radial-gradient(circle at 10% 20%, rgb(242, 235, 243) 0%, rgb(234, 241, 249) 90.1%);
+  /* background: radial-gradient(circle at 10% 20%, rgb(242, 235, 243) 0%, rgb(234, 241, 249) 90.1%); */
+  background-image: linear-gradient(to bottom right, rgb(159, 102, 190),rgb(98, 51, 121));
   font-family: 'Montserrat', sans-serif !important;
   color: var(--text-color);
   background-size: cover;
@@ -15,11 +16,11 @@ body {
 }
 
 .container-box {
-  background-color: #fff;
+  background-color: #f2deed;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  border-radius: 5px;
+  border-radius: 10px;
   max-width: 90%;
-  margin: 15px auto;
+  margin: 30px auto;
   padding: 20px 30px;
 }
 .App {
@@ -31,7 +32,6 @@ body {
 
 a {
   color: var(--secondary-color);
-  
 }
 footer {
   display: block;

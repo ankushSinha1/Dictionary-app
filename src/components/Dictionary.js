@@ -13,7 +13,9 @@ const Dictionary = (props) => {
         axios.get(apiUrl)
         .then((response) =>{
             setResults(response.data[0]);
-        });
+        }).catch((err)=>{
+            setResults(null);
+        })
     }
 
     const handleSubmit = (event) =>{
@@ -30,7 +32,7 @@ const Dictionary = (props) => {
         return (
         <div className="Dictionary">  
             <div className="container-box">
-                <h1>Word lookup</h1>        
+                <h1 className="header">Word lookup</h1>        
                 <form onSubmit={handleSubmit}>
                     <div className="d-flex">
                         <div className="flex-grow-1">
@@ -49,7 +51,14 @@ const Dictionary = (props) => {
                 </form>
                 <div className="suggestions">Such as: moon, sunset, nature </div>
             </div>
+            {results? <>
             <Results results={results} />
+            </> : <>
+                <div className="container-box results">
+                    <h2>No results to display with this keyword</h2>
+                </div>
+
+            </>}
         </div>
         );
     } else {
